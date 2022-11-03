@@ -1,6 +1,7 @@
 import Layout from "../../components/Layout";
 import TextInput from "../../components/TextInput";
 import TextArea from "../../components/TextArea";
+import Checkbox from "../../components/Checkbox";
 import "./style.css";
 
 export default function Contact() {
@@ -34,6 +35,10 @@ export default function Contact() {
             id="message"
             label="Message"
             placeholder="Send me a message and I'll reply you as soon as possible..."
+          />
+          <Checkbox
+            id="data_collection_agreement"
+            label="You agree to providing your data to Moses who may contact you."
           />
         </form>
       </main>
