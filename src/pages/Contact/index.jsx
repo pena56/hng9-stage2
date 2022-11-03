@@ -1,5 +1,6 @@
 import Layout from "../../components/Layout";
 import TextInput from "../../components/TextInput";
+import TextArea from "../../components/TextArea";
 import "./style.css";
 
 export default function Contact() {
@@ -28,6 +29,11 @@ export default function Contact() {
             label="Email"
             placeholder="yourname@email.com"
             type="email"
+          />
+          <TextArea
+            id="message"
+            label="Message"
+            placeholder="Send me a message and I'll reply you as soon as possible..."
           />
         </form>
       </main>
