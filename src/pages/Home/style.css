@@ -1,0 +1,86 @@
+.home_container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 16px;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.share_btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px dashed #d0d5dd;
+  top: 44px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-image: url("../../assets/share-sm.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile,
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile > img {
+  width: 88px;
+  height: 88px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.socials {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#slack {
+  /* visibility: hidden; */
+  display: none;
+}
+
+.links {
+  margin-top: 56px;
+  width: 100%;
+}
+
+.social_icons {
+  display: flex;
+  padding: 24px 0;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  gap: 24px;
+}
+
+.social_icons img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 1200px) {
+  .social_icons {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .share_btn {
+    right: 20%;
+    background-image: url("../../assets/share-lg.svg");
+  }
+}
