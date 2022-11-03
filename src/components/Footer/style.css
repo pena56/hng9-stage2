@@ -1,0 +1,61 @@
+footer {
+  padding: 24px 16px;
+  width: 100%;
+}
+
+hr {
+  margin-bottom: 24px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > div > p {
+  color: #667085;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+footer > div > img {
+  width: 99px;
+  height: auto;
+  object-fit: contain;
+  margin-top: 16px;
+}
+
+.zuri_icon {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 8px;
+}
+
+.zuri_icon > div {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #e7332b;
+  position: absolute;
+  top: 35%;
+  left: 27%;
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    padding-left: 113px;
+    padding-right: 113px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  footer > div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer > div > img {
+    margin-top: 0;
+  }
+}
