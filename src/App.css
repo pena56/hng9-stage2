@@ -1,0 +1,150 @@
+main {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 16px;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.share_btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px dashed #d0d5dd;
+  top: 44px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-image: url("./assets/share-sm.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile,
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile > img {
+  width: 88px;
+  height: 88px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.socials {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#slack {
+  /* visibility: hidden; */
+  display: none;
+}
+
+.links {
+  margin-top: 56px;
+  width: 100%;
+}
+
+.social_icons {
+  display: flex;
+  padding: 24px 0;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  gap: 24px;
+}
+
+.social_icons img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* .social_icons img:first-child {
+  margin-right: 24px;
+} */
+
+footer {
+  padding: 24px 16px;
+  width: 100%;
+}
+
+hr {
+  margin-bottom: 24px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > div > p {
+  color: #667085;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+footer > div > img {
+  width: 99px;
+  height: auto;
+  object-fit: contain;
+  margin-top: 16px;
+}
+
+.zuri_icon {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 8px;
+}
+
+.zuri_icon > div {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #e7332b;
+  position: absolute;
+  top: 35%;
+  left: 27%;
+}
+
+@media screen and (min-width: 1200px) {
+  .social_icons {
+    margin-bottom: 64px;
+  }
+
+  footer {
+    padding-left: 113px;
+    padding-right: 113px;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .share_btn {
+    right: 20%;
+    background-image: url("./assets/share-lg.svg");
+  }
+}
+
+@media screen and (min-width: 500px) {
+  footer > div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer > div > img {
+    margin-top: 0;
+  }
+}
