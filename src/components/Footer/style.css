@@ -58,4 +58,8 @@ footer > div > img {
   footer > div > img {
     margin-top: 0;
   }
+
+  .i4g_icon {
+    margin-top: -15px;
+  }
 }

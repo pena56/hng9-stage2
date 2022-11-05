@@ -76,6 +76,7 @@ export default function Home() {
             id="contact"
             url="/contact"
             subtext="Get in touch with me"
+            useRouter
           />
         </section>
         <section className="social_icons">

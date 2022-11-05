@@ -12,7 +12,7 @@ export default function Footer() {
           <div></div>
         </div>
         <p>HNG Intership 9 Frontend Task</p>
-        <img src={i4g} alt="" />
+        <img src={i4g} alt="" className="i4g_icon" />
       </div>
     </footer>
   );
